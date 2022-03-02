@@ -1,0 +1,13 @@
+:root {
+    --color-gray100: #050110;
+    --color-gray200: #1C1D1F;
+    --color-gray300: #393c40;
+    --color-gray800: #F7F8FA;
+    --color-pink: #f67acb;
+    --color-white: #ffffff;
+
+}
+
+html {
+    font-size: 16px;
+}

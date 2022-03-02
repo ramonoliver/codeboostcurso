@@ -1,0 +1,96 @@
+:root {
+    --color-red: red;
+    --color-blue: blue;
+    --color-white: white;
+    --color-black: black;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+label {
+    font-size: 0.5rem;
+}
+
+p {
+    font-size: 1.125rem; /*option + z = seleciona o 18px e altera para rem*/
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixa {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--color-blue);
+    /*margin: 0 auto;*/
+    color: var(--color-white);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.botao {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.botao:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.main {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-blue);
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.main div {
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main div:first-child {
+    order: 1;
+}
+
+.main div:nth-child(2) {
+    order: 4;
+    background-color: var(--color-red);
+}
+
+.main div:nth-child(3) {
+    order: 3;
+}
+
+.main div:last-child {
+    order: 2;
+}

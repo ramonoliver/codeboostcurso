@@ -1,0 +1,12 @@
+:root {
+    --color-gray50: #e6ebf2;
+    --color-gray100: #050110;
+    --color-gray200: #1C1D1F;
+    --color-gray300: #393c40;
+    --color-gray400: #5c6066;
+    --color-gray800: #F7F8FA;
+    --color-pink: #f67acb;
+    --color-white: #ffffff;
+    --color-white-text:  rgba(255, 255, 255, 0.7);
+    --color-gray-card: rgba(28, 29, 31, 0.5);
+}
