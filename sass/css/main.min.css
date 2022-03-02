@@ -1,2 +1,2 @@
-*{margin:0;padding:0}body{background:black}body h1{color:pink}
+*{margin:0;padding:0}body{background-color:white}body h1{color:pink}.hero .text h1{background-color:#000}.hero .text p{color:blue}.hero .text button{padding:8px 32px;border:none;border-radius:4px;background-color:#000;color:white}.hero .text button:hover{background-color:blue}
 /*# sourceMappingURL=main.min.css.map */

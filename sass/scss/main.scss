@@ -2,7 +2,7 @@
 @import 'variables';
 
 body {
-    background-color: $main-color;
+    background-color: white;
     h1 {
         color: pink;
     }
@@ -15,6 +15,17 @@ body {
         }
         p {
             color: $second-color;
+        }
+        button {
+            padding: 8px 32px;
+            border: none;
+            border-radius: 4px;
+            background-color: $main-color;
+            color: white;
+
+            &:hover {
+                background-color: $second-color;
+            }
         }
     }
 }
