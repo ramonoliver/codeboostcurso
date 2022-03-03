@@ -1,31 +1,54 @@
 @import 'reset';
 @import 'variables';
+@import 'grid';
+@import 'mixins';
 
 body {
     background-color: white;
-    h1 {
-        color: pink;
-    }
-}
+    
 
-.hero {
-    .text {
-        h1 {
-            background-color: $main-color;
-        }
-        p {
-            color: $second-color;
-        }
-        button {
-            padding: 8px 32px;
-            border: none;
-            border-radius: 4px;
-            background-color: $main-color;
-            color: white;
+    .hero {
+        .container {
+            .text {
+                @include flex (left, space-between, row)
 
-            &:hover {
-                background-color: $second-color;
+                h1 {
+                    font-size: 4rem;
+                    margin-bottom: 2rem;
+                }
+
+                button {
+                    @include style-button (8px 32px, $main-color);
+
+                    &:hover {
+                        background-color: $second-color;
+                    }
+                }
+            }
+        }
+
+        @include responsive(480px) {
+            .container {
+                .text {
+                    @include flex (left, space-between, column)
+    
+                    h1 {
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    button {
+                        background-color: yellow;
+                        color: $main-color;
+                        margin: 16px 0;
+    
+                        &:hover {
+                            background-color: $second-color;
+                        }
+                    }
+                }
             }
         }
     }
+
 }

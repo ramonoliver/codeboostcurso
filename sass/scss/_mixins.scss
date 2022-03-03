@@ -1,0 +1,22 @@
+@mixin flex ($align, $justify, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin style-button ($padding, $fundo) {
+    padding: $padding;
+    border: none;
+    border-radius: 4px;
+    background-color: $fundo;
+    color: white;
+    font-weight: 500;
+    @include flex(center, center, row);
+}
+
+@mixin responsive ($screenWidth) {
+    @media (max-width: $screenWidth) {
+        @content;
+    }
+}
